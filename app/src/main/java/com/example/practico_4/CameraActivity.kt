@@ -63,7 +63,7 @@ class CameraActivity : AppCompatActivity() {
                     this, cameraSelector, preview, imageCapture
                 )
             } catch (exc: Exception) {
-                // Handle exception
+                
             }
 
         }, ContextCompat.getMainExecutor(this))
@@ -76,7 +76,7 @@ class CameraActivity : AppCompatActivity() {
         val currentDate = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(Date())
         photoFile.writeText(currentDate)
 
-        // Here you can also save the actual photo if needed
+        
     }
 
     private fun allPermissionsGranted() = REQUIRED_PERMISSIONS.all {
